@@ -1,0 +1,15 @@
+location_finder.listing_search:
+  path: '/location-finder-search'
+  defaults:
+      _form: '\Drupal\location_finder\Form\LocationFinderSearch'
+      _title: 'Location finder search page'
+  requirements: 
+    _permission: 'access content'    
+
+location_finder.listing:
+  path: '/location-finder'
+  defaults:
+    _controller: '\Drupal\location_finder\Controller\LocationFinderController::view'
+    _title: 'Location finder page'
+  requirements: 
+    _permission: 'access content'

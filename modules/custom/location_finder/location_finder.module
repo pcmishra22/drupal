@@ -1,0 +1,12 @@
+<?php
+
+// implement hooks theme
+
+function location_finder_theme($existing,$type,$theme,$path)
+{
+    return [
+        'location-listing' => [
+            'variables' => ['content' => NULL]
+        ]
+    ];
+}

@@ -1,0 +1,4 @@
+services:
+  location_finder.location_finder_services:
+    class:  Drupal\location_finder\LocationFinderService
+    arguments: ['@http_client_factory']
